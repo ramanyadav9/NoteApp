@@ -1,0 +1,115 @@
+/* General page structure */
+.home-layout {
+    display: flex;
+    height: 90vh;
+    width: 120%;
+    padding: 20px;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Left section (form) */
+  .note-form-section {
+    width: 30%;
+    padding: 20px;
+    background-color: #F6F0F0;
+    border-radius: 12px;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Divider line between form and notes */
+  .divider {
+    width: 2px;
+    background-color: #d3d3d3;
+  }
+  
+  /* Right section (scrollable notes) */
+  .note-list-section {
+    width: 68%;
+    max-height: 80vh;
+    padding-right: 10px;
+    overflow-y: auto;
+  }
+  
+  .note-grid {
+    column-count: 3; /* number of columns */
+    column-gap: 16px;
+  }
+  
+  
+  /* Each note card */
+  .note-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 16px;
+    display: inline-block;   /* this is key for column layout */
+    width: 100%;             /* full width of the column */
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    overflow-wrap: break-word;
+  }
+  
+  
+  
+.note-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Note title and delete button */
+  .note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Form styling */
+  .note-form .form-control {
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .note-form .btn-success {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .note-form .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .home-layout {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    @media (max-width: 768px) {
+        .note-grid {
+          column-count: 1;
+        }
+      }
+      
+    .note-form-section,
+    .note-list-section {
+      width: 100%;
+    }
+  
+    .note-list-section {
+      max-height: none;
+      overflow-y: visible;
+    }
+  }
+  

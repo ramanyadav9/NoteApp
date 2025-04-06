@@ -1,0 +1,160 @@
+body {
+  background-color: #FDFAF6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+
+}
+
+
+.container_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: linear-gradient(#ffffff 1.1rem, #ccc 1.2rem);
+  background-size: 100% 1.2rem;
+}
+
+.container_background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(167, 255, 176, 0.271); /* Netflix dark overlay */
+  z-index: -1;
+}
+
+
+
+
+
+.navbar {
+  background-color: #a3db83;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: #E4EFE7;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-brand {
+  color: #164451;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-email {
+  font-weight: bold;
+  color: #164451;
+  margin-right: 15px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links a {
+  color: #164451;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #91c1a4;
+  color: white;
+}
+
+
+
+
+
+/* Space below navbar */
+/* Flash Messages */
+/* Floating flash container */
+/* Floating Flash Message Container */
+#flash-messages {
+  position: fixed;
+  top: 70px; /* Just below navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Individual Message Style */
+.custom-alert {
+  margin: 10px auto;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  pointer-events: auto;
+}
+
+/* Fading out effect */
+.fade-out {
+  opacity: 0;
+}
+
+.alert-success {
+  background-color: #b7f3c5;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f89ba2;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+ 
+
+
+
+/* Main content container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh; /* Full screen */
+  padding: 20px;
+  background: transparent; /* Make sure container doesn’t override pattern */
+}
+
+/* Footer styling */
+.footer {
+  background-color: #a3db83;
+  color: #164451;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 0px;
+  font-weight: bold;
+  box-shadow:#E4EFE7;
+}
+

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Flask
+instance/
+
+# Environment
+venv/
+
+# VSCode or other IDE stuff
+.vscode/
+.idea/
+
+

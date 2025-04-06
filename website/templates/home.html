@@ -1,0 +1,41 @@
+{% extends "base.html" %} 
+
+{% block title %}Home{% endblock %} 
+
+{% block content %}
+<div class="home-layout">
+  <!-- Left: Form Section -->
+  <div class="note-form-section">
+    <h1 align="center">Your Notes</h1>
+    <form method="POST" class="note-form">
+      <div class="form-group">
+        <input type="text" name="title" class="form-control" placeholder="Note title" required />
+      </div>
+      <div class="form-group">
+        <textarea name="data" class="form-control" placeholder="Write your note here..." rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Add Note</button>
+    </form>
+  </div>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Right: Notes Grid -->
+  <div class="note-list-section">
+    <div class="note-grid">
+      {% for note in user.notes %}
+      <div class="note-card">
+        <div class="note-header">
+          <h5><span style='font-size:25px;'>&#9760</span><i>{{ note.title }}</i></h5>
+          <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p>{{ note.data }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <form method="POST" class="form_area">
+    <p class="title">Welcome Back</p>
+    <p class="sub_title">Login to your account</p>
+
+    <div class="form_group">
+      <label for="email">Email</label>
+      <input type="email" class="form_style" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form_group">
+      <label for="password">Password</label>
+      <input type="password" class="form_style" name="password" placeholder="Enter your password" required>
+    </div>
+
+    <button type="submit" class="btn">Login</button>
+
+    <p class="link">Don't have an account? <a href="/sign-up">Sign Up</a></p>
+  </form>
+</div>
+{% endblock %}
