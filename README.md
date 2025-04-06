@@ -44,8 +44,8 @@ A simple and clean note-taking web application built using **Flask**, **Bootstra
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/notes-flask-app.git
-cd notes-flask-app
+git clone this repo
+cd NoteApp
 ```
 
 2. **Create a virtual environment & activate it**
