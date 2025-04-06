@@ -36,7 +36,7 @@ A simple and clean note-taking web application built using **Flask**, **HTML & C
 ![Login page](/Screenshot/login.png)
 
 > _Modern layout with form on left and scrollable notes on right._
-![Home Page Layout](/Screenshot/note%20ss.pngscreenshots/home-layout.png)
+![Home Page Layout](/Screenshot/note%20ss.png)
 
 
 
