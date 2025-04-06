@@ -1,7 +1,7 @@
 # NoteApp
 # 📝 Notes Web App
 
-A simple and clean note-taking web application built using **Flask**, **Bootstrap 4**, **SQLAlchemy**, and **Flask-Login**. This app allows users to register, log in, and create personal notes with a modern Pinterest-style layout.
+A simple and clean note-taking web application built using **Flask**, **HTML & CSS**, **SQLAlchemy**, and **Flask-Login**. This app allows users to register, log in, and create personal notes with a modern Pinterest-style layout.
 
 ---
 
