@@ -5,11 +5,14 @@ __pycache__/
 # Flask
 # instance/
 
+Screenshot/
+
 # Environment
 venv/
 
 # VSCode or other IDE stuff
 .vscode/
 .idea/
+
 
 
