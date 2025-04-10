@@ -12,7 +12,7 @@ A simple and clean note-taking web application built using **Flask**, **HTML & C
 - 🧾 Each note includes a **title** and **content**
 - 📄 Responsive two-column layout (Input form + Notes cards)
 - 📎 Sticky note form section and scrollable notes area
-- 🎨 Clean, minimal, and mobile-friendly UI using Bootstrap & custom SCSS
+- 🎨 Clean, minimal, and mobile-friendly UI using Bootstrap & custom CSS
 
 ---
 
